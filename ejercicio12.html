@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12 - Conversor MXN a USD</title>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Conversor de Moneda</h1>
+        <p class="subtitulo">Convierte pesos mexicanos (MXN) a dólares (USD)</p>
+
+        <div class="grupo-formulario">
+            <label for="pesos">Cantidad en Pesos (MXN)</label>
+            <input type="text" id="pesos" placeholder="Ej: 500">
+        </div>
+
+        <button type="button" id="btnConvertir">Convertir</button>
+
+        <div class="grupo-formulario">
+            <label for="dolares">Cantidad en Dólares (USD)</label>
+            <input type="text" id="dolares" readonly>
+        </div>
+
+        <p id="mensajeError" class="error"></p>
+    </div>
+
+    <script src="js/ejercicio12.js"></script>
+</body>
+</html>
