@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 16 - Calculadora</title>
+<link rel="stylesheet" href="ejercicio16.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<div class="container">
+<h1>Calculadora</h1>
+
+<div class="tarjeta">
+<input type="text" id="numero1" placeholder="Número 1">
+<input type="text" id="numero2" placeholder="Número 2">
+
+<div class="botones">
+<button onclick="calcularOperacion('suma')">+</button>
+<button onclick="calcularOperacion('resta')">−</button>
+<button onclick="calcularOperacion('multiplicacion')">×</button>
+<button onclick="calcularOperacion('division')">÷</button>
+</div>
+
+<input type="text" id="resultado" readonly placeholder="Resultado">
+</div>
+
+</div>
+<script src="ejercicio16.js"></script>
+</body>
+</html>

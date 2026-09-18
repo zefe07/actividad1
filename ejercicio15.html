@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 15 - Estudiantes</title>
+<link rel="stylesheet" href="ejercicio15.css">
+</head>
+<body>
+<div class="container">
+<h1>Gestión de Calificaciones</h1>
+
+<div class="tarjeta">
+<div class="fila">
+<input type="text" id="nombre" placeholder="Nombre del estudiante">
+<input type="text" id="calificacion" placeholder="Calificación">
+<button onclick="agregarEstudiante()">Agregar estudiante</button>
+</div>
+</div>
+
+<div class="tarjeta">
+<ul id="listaEstudiantes"></ul>
+<button class="btn-calcular" onclick="calcular()">Calcular</button>
+</div>
+
+<div class="tarjeta resultados">
+<div class="campo">
+<label for="promedio">Promedio</label>
+<input type="text" id="promedio" readonly>
+</div>
+<div class="campo">
+<label for="maxima">Calificación más alta</label>
+<input type="text" id="maxima" readonly>
+</div>
+<div class="campo">
+<label for="minima">Calificación más baja</label>
+<input type="text" id="minima" readonly>
+</div>
+</div>
+
+</div>
+<script src="ejercicio15.js"></script>
+</body>
+</html>

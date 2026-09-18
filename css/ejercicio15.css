@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eef1f5;
+  color: #22303f;
+  padding: 40px 16px;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #1c2b3a;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(20, 30, 45, 0.08);
+}
+
+.fila {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 12px;
+  border: 1px solid #c7d0da;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[readonly] {
+  background: #f4f6f8;
+  color: #445466;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2f6fed;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2559c4;
+}
+
+.btn-calcular {
+  margin-top: 14px;
+  width: 100%;
+  background: #1c8f5e;
+}
+
+.btn-calcular:hover {
+  background: #167649;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e9ee;
+  font-size: 14px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 13px;
+  color: #56687c;
+}
