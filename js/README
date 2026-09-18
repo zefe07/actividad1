@@ -1,0 +1,74 @@
+Ejercicio 2: Párrafos y Formato Básico
+
+Aquí simplemente estamos jugando con las etiquetas 
+de texto más elementales de HTML: <p> para separar 
+párrafos, <strong> para resaltar algo importante, <em> para dar énfasis
+ y <br> cuando queremos un salto de línea sin meter un
+  párrafo nuevo. 
+
+Ejercicio 3: Enlaces Simples
+
+Este ejercicio se centra en los 
+hipervínculos. Se crean enlaces 
+con <a href="">, y se aprende la diferencia 
+entre abrir el link en una pestaña nueva (target="_blank") o en
+ la misma (target="_self", que es el comportamiento por defecto 
+ si no se pone nada).
+
+Ejercicio 4: Imágenes Básicas
+
+Aquí entra la etiqueta <img>, que a 
+diferencia de otras no necesita cierre. Se
+ practica con sus atributos más importantes:
+ src para indicar dónde está la imagen, 
+ alt como texto alternativo (clave para accesibilidad) 
+ y width para controlar el tamaño. Si la imagen no se
+  encuentra en la ruta, el navegador muestra el ícono
+   típico de imagen rota, así que hay que tener cuidado
+    con la carpeta img/.
+
+Ejercicio 5: Combinando Texto y Enlaces
+
+Este es más un ejercicio de integración: 
+se junta todo lo visto antes (párrafos, negritas, 
+cursivas, imágenes y enlaces) en una sola página algo 
+parecido a un mini blog personal. 
+
+Ejercicio 6: Secciones Semánticas Básicas
+
+Aquí se deja de pensar solo en <div> para todo y se 
+empieza a usar HTML semántico: <header> para la cabecera, 
+<section> para agrupar contenido temático y <footer> para el
+ pie de página. No cambia mucho visualmente, pero le da mucho
+  más sentido y orden al documento.
+
+Ejercicio 7: Listas Anidadas + Enlaces
+
+Se trabaja con listas, tanto desordenadas (<ul>) como ordenadas
+ (<ol>), y lo interesante es que se anida una lista dentro de
+  otra (por ejemplo, un ingrediente que tiene una sublista con
+   más detalle). Es un patrón muy común para menús, índices o, 
+   como en este caso, una receta de cocina.
+
+Ejercicio 8: Horario de Clases
+
+Este ya mete tablas de verdad: <table>, <thead> y <tbody> para separar el encabezado del contenido,
+ y <tr>, <td>, <th> para armar filas y celdas. También se usan rowspan y colspan para fusionar celdas 
+ cuando una clase ocupa más de un bloque de horario (como el laboratorio de Base de Datos que dura dos 
+  horas). Ya trae su propio CSS externo para que se vea como un horario real y no una tabla pelona.
+
+Ejercicio 9: Formulario de Contacto
+
+Aquí se sube de nivel con formularios completos: <form>, <fieldset>, inputs de distintos tipos (texto, email, teléfono), <textarea> para mensajes largos y buenas prácticas de accesibilidad usando <label for="">. El CSS usa variables (:root) para manejar colores de forma centralizada y un layout en grid para acomodar el email y el teléfono lado a lado.
+
+Ejercicio 10: Conversor de Celsius a Fahrenheit
+
+El primer ejercicio que ya mete JavaScript de verdad. El usuario escribe una temperatura en Celsius, le da clic a "Convertir" y el script hace el cálculo (F = C × 9/5 + 32) y lo muestra en un campo bloqueado con readonly, para que no se pueda editar el resultado a mano. También se valida que el campo no esté vacío y que lo que se escribió sea realmente un número, todo esto sin recargar la página.
+
+Ejercicio 12: Conversor de Pesos a Dólares
+
+Misma lógica que el anterior pero aplicada a dinero: se convierte una cantidad en pesos mexicanos a dólares usando una tasa de cambio fija (0.055). Además de validar que el campo no esté vacío y sea numérico, aquí también se checa que el número sea positivo, porque no tendría sentido convertir una cantidad negativa de dinero.
+
+Ejercicio 13: Verificador de Edad para Votar
+
+Este ejercicio es más de lógica condicional que de cálculo. El usuario ingresa su edad, le da clic a "Verificar", y el script simplemente evalúa si es mayor o igual a 18 para decirle si puede votar o no. El resultado, como en los ejercicios anteriores, se muestra en un campo readonly y se validan tanto el campo vacío como que la edad sea un número positivo.

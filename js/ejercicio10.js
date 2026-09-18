@@ -5,24 +5,20 @@ document.getElementById('btnConvertir').addEventListener('click', function () {
 
     const valorCelsius = celsiusInput.value.trim();
 
-    // Validación: campo vacío
     if (valorCelsius === '') {
         mensajeError.textContent = 'Por favor ingresa un valor en grados Celsius.';
         fahrenheitInput.value = '';
         return;
     }
 
-    // Validación: valor numérico
     if (isNaN(valorCelsius)) {
         mensajeError.textContent = 'El valor ingresado debe ser numérico.';
         fahrenheitInput.value = '';
         return;
     }
 
-    // Limpiar mensaje de error
     mensajeError.textContent = '';
 
-    // Conversión: F = (C x 9/5) + 32
     const celsius = parseFloat(valorCelsius);
     const fahrenheit = (celsius * 9 / 5) + 32;
 

@@ -4,7 +4,7 @@ function convertir() {
     var valor = kmInput.value.trim();
 
     if (valor === "") {
-        alert("Por favor ingresa un valor en kilómetros.");
+        alert(" ingresa un valor en kilómetros.");
         return;
     }
 
